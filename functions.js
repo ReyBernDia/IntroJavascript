@@ -5,8 +5,16 @@
 
 // Define your function here
 
+const isHometown = (town) => {
 
-** 2. getFullName */
+  return (town === 'San Francisco');
+
+};
+
+console.log(isHometown('Oakland'));
+console.log(isHometown('San Francisco'));
+
+/** 2. getFullName */
 
 // Define your function here
 
