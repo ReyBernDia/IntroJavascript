@@ -52,3 +52,32 @@ const smallestNItems = (items, n) => {
 
 const nums = [1, 30, 4, 21, 100000];
 smallestNItems(nums, 3)
+
+//KIDS GAME- SKILLS 2- DICTIONARIES//
+
+const kidsGame = (names) => {
+
+  const output = [names.shift()];
+  const firstLetterToWords = {};
+
+  // Iterate over the whole list
+  // grab each word and index into the first letter: word[0]
+  // if it's already in the dictionary, dictionary[letter] += word
+  // otherwise, if it's not in dict, dictionary[letter] = word
+
+  for (const name of names) {
+    if (! firstLetterToWords[name[0]]) {
+      firstLetterToWords[name[0]] = [name];
+    } else {
+      firstLetterToWords[name[0]].push(name);
+    }
+  } 
+  // let i = 0
+  while (true) {
+    let arrayIdx = output.length - 1;
+    let letterIdx = output[arrayIdx].length - 1;
+    let startLetter = output[arrayIdx][letterIdx];
+
+  }
+
+};
